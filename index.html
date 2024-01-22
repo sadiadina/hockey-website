@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hockey Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<!--manrope google font-->
+<style>
+    .font-manrope{
+        font-family: 'Manrope', sans-serif;
+    }
+</style>
+
+ <!--tailwind custom color-->
+ <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'gradient-start': '#FF8938',
+            'gradient-end': '#F00',
+          }
+        }
+      }
+    }
+  </script>
+
+</head>
+<body>
+    <header class="container mx-auto">
+        <div class="carousel">
+            <div id="slide1" class="carousel-item relative w-full">
+              <img src="Images/1.png" class="w-full" />
+              <div class="absolute flex justify-between transform  left-5 right-5 top-1/2">
+                <a href="#slide4" class="btn btn-circle text-white bg-[#131318] border-black">❮</a> 
+                <a href="#slide2" class="btn btn-circle text-white bg-[#131318] border-black">❯</a>
+              </div>
+            </div> 
+            <div id="slide2" class="carousel-item relative w-full">
+              <img src="Images/2.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle text-white bg-[#131318] border-black">❮</a> 
+              
+              </div>
+            </div> 
+         
+        
+        </div>
+        
+    </header>
+
+    <main class="container mx-auto">
+
+        <section class="font-manrope text-center py-24 px-6">
+            <h2 class="text-4xl font-extrabold text-[#131318] mb-5">Professional Hockeys Club</h2>
+            <p class="lg:max-w-3xl mb-10 mx-auto">There are many variations of passages of Lorem Ipsum available, but the
+              majority have suffered alteration in some form, by injected humour, or randomised words which don't look even
+              slightly believable. </p>
+
+       <!--progress section-->
+       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+        <div class="card w-96 ">
+            
+            <div class="card-body items-center text-center">
+                <div class="radial-progress text-[#FF4240]" style="--value:87;" role="progressbar"><span class="text-[#131318] font-extrabold">87%</span></div>
+              <h2 class="card-title">Prayer Facility</h2>
+              <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+             
+            </div>
+          </div>
+
+
+        <div class="card w-96 ">
+            
+            <div class="card-body items-center text-center">
+                <div class="radial-progress text-[#49D293]" style="--value:95;" role="progressbar"><span class="text-[#131318] font-extrabold">95%</span> </div>
+              <h2 class="card-title">Experienced Coach</h2>
+              <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+             
+            </div>
+          </div>
+        <div class="card w-96 ">
+            
+            <div class="card-body items-center text-center">
+                <div class="radial-progress text-[#FFB546]" style="--value:90;" role="progressbar"><span class="text-[#131318] font-extrabold">90%</span> </div>
+              <h2 class="card-title">Experienced Coach</h2>
+              <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+             
+            </div>
+          </div>
+
+        <div class="card w-96 ">
+            
+            <div class="card-body items-center text-center">
+                <div class="radial-progress text-[#4C8DF1]" style="--value:80;" role="progressbar"><span class="text-[#131318] font-extrabold">80%</span> </div>
+              <h2 class="card-title">Training Ground</h2>
+              <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+             
+            </div>
+          </div>
+       </div>
+
+       </section>   
+       <section class="font-manrope text-center py-24 px-6">
+        <h2 class="text-4xl font-extrabold text-[#131318] mb-6">Program Sections</h2>
+        <p class="lg:max-w-3xl mb-10 mx-auto">There are many variations of passages of Lorem Ipsum available, but the
+          majority have suffered alteration in some form, by injected humour, or randomised words which don't look even
+          slightly believable. </p>
+
+          <!--program section card-->
+          <!--<<div class="my-24 gap-12 flex flex-col lg:flex-row">
+            <div class="grid justify-between gap-8 grid-cols-1 md:grid-cols-2 flex-1">
+           <div class="flex justify-between">
+            <div class="card lg:w-[573px] rounded-xl bg-transparent  image-full">
+                <figure><img src="Images/2.png" alt="" /></figure>
+                <div class="card-body text-left text-white py-20">
+                  <h2 class="mb-4 card-title text-3xl">Junior Program</h2>
+                  <p class="mb-8">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+                    enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+                  <div class="card-actions justify-start">
+                    <button class="btn btn-primary">Register Now!</button>
+                  </div>
+                </div>
+              </div>
+
+            <div class="card  lg:w-[573px] rounded-xl bg-transparent  image-full">
+                <figure><img src="Images/3.png" alt="" /></figure>
+                <div class="card-body text-left text-white py-20">
+                  <h2 class="mb-4 card-title text-3xl">Junior Program</h2>
+                  <p class="mb-8">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+                    enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+                  <div class="card-actions justify-start">
+                    <button class="btn btn-primary">Register Now!</button>
+                  </div>
+                </div>
+              </div>
+             </div>
+
+            <div class="card w-[1170px] rounded-xl bg-transparent  image-full">
+                <figure><img src="Images/4.png" alt="" /></figure>
+                <div class="card-body text-left text-white py-20">
+                  <h2 class="mb-4 card-title text-3xl">Junior Program</h2>
+                  <p class="mb-8">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+                    enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+                  <div class="card-actions justify-start">
+                    <button class="btn btn-primary">Register Now!</button>
+                  </div>
+                </div>
+              </div>
+              </div>
+          </div>
+        -->
+        
+        </section>
+       
+       
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+
+   
+
+    
+</body>
+</html>
